@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 })
 
 app.get('/.well-known/assetlinks.json',function(req,res){
-	res.render('.well-known/assetlinks.json');
+	res.render('assetlinks.json');
 });
 
 app.listen(app.get('port'), function() {

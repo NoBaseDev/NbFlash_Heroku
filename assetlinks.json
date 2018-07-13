@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.nobasedev.nbflash",
+    "sha256_cert_fingerprints":
+    ["75:D1:12:1A:85:EC:C7:2E:30:1E:51:69:FD:0F:FC:6C:BB:7B:7E:45:33:5B:AF:71:35:FF:53:3E:84:E3:8C:0B"]
+  }
+}]
