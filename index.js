@@ -8,8 +8,8 @@ app.get('/', function(request, response) {
   response.send('Hello World!')
 })
 
-app.get('/.well-known/assetlinks.json',function(req,res){
-	//res.render('assetlinks.json');
+app.get('/.well-known/assetlinks.json',function(request, response){
+	//response.render('assetlinks.json');
 	var fs = require("fs");
 	console.log("\n *START* \n");
 	var content = fs.readFileSync("assetlinks.json");
