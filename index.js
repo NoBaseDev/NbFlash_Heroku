@@ -9,7 +9,12 @@ app.get('/', function(request, response) {
 })
 
 app.get('/.well-known/assetlinks.json',function(req,res){
-	res.render('assetlinks.json');
+	//res.render('assetlinks.json');
+	var fs = require("fs");
+	console.log("\n *START* \n");
+	var content = fs.readFileSync("assetlinks.json");
+	console.log("Output Content : \n"+ content);
+	console.log("\n *EXIT* \n");
 });
 
 app.listen(app.get('port'), function() {
