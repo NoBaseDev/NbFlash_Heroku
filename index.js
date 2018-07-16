@@ -5,7 +5,13 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello World!')
+  //response.send('Hello World!')
+	var fs = require("fs");
+	console.log("\n *START* \n");
+	var content = fs.readFileSync("assetlinks.json");
+	response.send(content);
+	console.log("Output Content : \n"+ content);
+	console.log("\n *EXIT* \n");
 })
 
 app.get('/.well-known/assetlinks.json',function(request, response){
