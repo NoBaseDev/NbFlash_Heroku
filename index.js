@@ -9,7 +9,7 @@ app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {  
 	console.log("\n *index START* \n");
-	response.render('index.html')
+	response.render('index')
 	console.log("\n *index EXIT* \n");
 })
 
