@@ -7,8 +7,10 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
-app.get('/', function(request, response) {
-  response.render('index.html')
+app.get('/', function(request, response) {  
+	console.log("\n *index START* \n");
+	response.render('index.html')
+	console.log("\n *index EXIT* \n");
 })
 
 app.get('/.well-known/assetlinks.json',function(request, response){
