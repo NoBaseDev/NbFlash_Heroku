@@ -5,16 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('<html>
-<head>
-  <meta charset="utf-8" />
-  <title>NB Flash</title>
-  <meta name="google-site-verification" content="9MheOX2PvKaLesDfgFd63ABvB7lrq5ShMQuC-HSQp4k" />
-</head>
-<body>
-  <div>Hello World!</div>
-</body>
-</html>')
+  response.render('index.html')
 })
 
 app.get('/.well-known/assetlinks.json',function(request, response){
