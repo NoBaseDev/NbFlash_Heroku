@@ -8,9 +8,7 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.get('/', function(request, response) {  
-	console.log("\n *index START* \n");
-	response.render('index.html')
-	console.log("\n *index EXIT* \n");
+	response.send('test!!!');
 })
 
 app.get('/.well-known/assetlinks.json',function(request, response){
